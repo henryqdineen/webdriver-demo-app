@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" />
+    <script src="/javascripts/bower/requirejs/require.js"></script>
+    <script>
+      requirejs.config({
+        baseUrl: 'javascripts',
+        paths: {
+          css: 'bower/require-css/css',
+          text: 'bower/requirejs-text/text',
+          handlebars: 'bower/handlebars/handlebars',
+          jquery: 'bower/jquery/dist/jquery',
+          backbone: 'bower/backbone/backbone',
+          syphon: 'bower/marionette.backbone.syphon/lib/backbone.syphon',
+          underscore: 'bower/underscore/underscore',
+          marionette: 'bower/backbone.marionette/lib/backbone.marionette'
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      {{{body}}}
+    </div>
+  </body>
+</html>

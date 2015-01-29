@@ -1,0 +1,35 @@
+<div class="email-form container">
+  <div class="default-container">
+    <button type="button" class="btn btn-danger compose-button">
+      <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Compose
+    </button>
+  </div>
+
+  <div class="compose-container">
+    <form method="post">
+      <div class="form-group">
+        <label>Email address</label>
+        <input type="email" class="form-control" placeholder="Enter email" name="to">
+      </div>
+      <div class="form-group">
+        <label>Subject</label>
+        <input type="text" class="form-control" placeholder="Enter subject" name="subject">
+      </div>
+      <div class="form-group">
+        <label>Body</label>
+        <textarea rows="5" class="form-control" placeholder="Type your message..." name="text"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary send-button">
+        <span class="glyphicon glyphicon-send" aria-hidden="true"></span> Send
+      </button>
+    </form>
+  </div>
+
+  <div class="sending-container">
+    <div class="alert alert-info" role="alert"><strong>Sending...</strong></div>
+  </div>
+
+  <div class="success-container">
+    <div class="alert alert-success" role="alert"><strong>Email sent!</strong></div>
+  </div>
+</div>
