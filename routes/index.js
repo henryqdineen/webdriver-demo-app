@@ -2,9 +2,12 @@ var express = require('express');
 var nodemailer = require("nodemailer");
 var router = express.Router();
 
-/* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Compose' });
+  res.render('index', { title: 'Email Form' });
+});
+
+router.get('/about', function(req, res, next) {
+  res.render('about', { title: 'About' });
 });
 
 router.post('/send', function(req, res, next) {
