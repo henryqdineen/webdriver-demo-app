@@ -17,3 +17,7 @@ $ bower install
 $ maildev
 $ DEBUG=app:* ./bin/www
 ```
+
+### Suggested reading
+- http://docs.seleniumhq.org/docs/04_webdriver_advanced.jsp#explicit-and-implicit-waits
+- http://djfarrelly.github.io/MailDev/
