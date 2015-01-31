@@ -1,18 +1,2 @@
 .email-form {
-  margin-top: 50px;
-
-  .default-container,
-  .compose-container,
-  .sending-container,
-  .success-container {
-    display: none;
-  }
-
-  &.default-mode .default-container,
-  &.compose-mode .compose-container,
-  &.sending-mode .sending-container,
-  &.success-mode .success-container {
-    display: block;
-  }
-
 }

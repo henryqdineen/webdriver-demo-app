@@ -3,11 +3,7 @@ var nodemailer = require("nodemailer");
 var router = express.Router();
 
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Email Form' });
-});
-
-router.get('/about', function(req, res, next) {
-  res.render('about', { title: 'About' });
+  res.render('index', { title: 'WebDriver Demo App' });
 });
 
 router.post('/send', function(req, res, next) {
