@@ -14,20 +14,17 @@ define([
             "submit form": '_handleFormSubmit'
         },
         ui: {
-            back: '.back-button',
-            send: '.send-button'
+            buttons: 'button'
         },
         triggers: {
-            "click @ui.back": 'back'
+            "click .back-button": 'back'
         },
         _handleFormSubmit: function(e) {
-            var sendEmail;
-
             e.preventDefault();
 
             this.trigger('send', syphon.serialize(this));
 
-            this.ui.send.addClass("disabled");
+            this.ui.buttons.addClass("disabled");
         }
     });
 });
