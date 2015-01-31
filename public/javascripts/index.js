@@ -4,7 +4,6 @@ define([
     'welcome-screen/view',
     'feedback-view/view'
 ], function(Marionette, EmailForm, WelcomeScreen, FeedbackView) {
-
     var region, welcomeScreen, feedbackView;
 
     region = new Marionette.Region({
